@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Birthday Month</title>
+    <style>
+        body{
+            margin: 0 auto;
+        }
+        h1{
+            margin-left: 50px;
+            font-size:;
+            font-weight:;
+        }
+        h5{
+            text-align: center;
+            font-size: 32px;
+        }
+        .calendar{
+            display: grid;
+            grid-template-columns:repeat(7 , 1fr) ;
+            row-gap: 20px;
+            column-gap: 20px;
+            margin-left: 50px;
+            margin-right:50px;
+            height: 600px;
+            padding: 30px;
+            padding-right: 0px;
+            background-image: url(img/birthbg.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+        }
+        .date , .day{
+            background-color:lightseagreen ;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+      width: 50px;
+      height: 50px;
+      border-radius: 5px;
+        }
+        .day{
+            background-color: lightgray;
+        }
+        .off{
+            background-color:whitesmoke;
+            color: red;
+        }
+        .birth  
+        {
+           background-color:blueviolet; 
+           color: white;
+        }
+        .small{
+            margin-left:0;
+        }
+         small{
+              margin-left:50px ;
+        }
+        .span{
+            color: crimson;
+        }
+        /* simple responsive media quary */
+        @media screen and (max-width:576px) {
+            h1{
+                margin-left:20px;
+            }
+            .calendar{
+                grid-template-columns:repeat(7, 1fr) ;
+                background-image: url(img/birthbg.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            padding:0;
+            column-gap:4px;
+            row-gap:3px;
+            padding-top: 5px;
+            margin-left: 20px;
+            }
+            small{
+            margin-left:20px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1> September , 2004<small class="small">(My Birthday Month)</small></h1>
+      <div class="calendar">
+        <div class="day">MON</div>
+        <div class="day">TUE</div>
+        <div class="day">WED</div>
+        <div class="day">THU</div>
+        <div class="day off">FRI</div>
+        <div class="day off">SAT</div>
+        <div class="day">SUN</div>
+        <div class="date">30</div>
+        <div class="date">31</div>
+        <div class="date">1</div>
+        <div class="date">2</div>
+        <div class="date off">3</div>
+        <div class="date off">4</div>
+        <div class="date">5</div>
+        <div class="date">6</div>
+        <div class="date">7</div>
+        <div class="date">8</div>
+        <div class="date">9</div>
+        <div class="date off">10</div>
+        <div class="date off">11</div>
+        <div class="date">12</div>
+        <div class="date">13</div>
+        <div class="date">14</div>
+        <div class="date birth">15</div>
+        <div class="date">16</div>
+        <div class="date off">17</div>
+        <div class="date off">18</div>
+        <div class="date">19</div>
+        <div class="date">20</div>
+        <div class="date">21</div>
+        <div class="date">22</div>
+        <div class="date">23</div>
+        <div class="date off">24</div>
+        <div class="date off">25</div>
+        <div class="date">26</div>
+        <div class="date">27</div>
+        <div class="date">28</div>
+        <div class="date">29</div>
+        <div class="date">30</div>
+        <div class="date off">1</div>
+        <div class="date off">2</div>
+        <div class="date">3</div>
+         
+      </div>
+      <small>s<span class="span">@</span>bikun-nhr</small>
+      <h5>15 september-My Birthday </h5>
+    
+</body>
+</html>
